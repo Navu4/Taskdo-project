@@ -159,6 +159,8 @@ a {
   height: 142px;
   background-color: #fff;
   display: flex;
+
+  align-items: center;
 }
 
 .carousel .carouselbox {
@@ -217,14 +219,12 @@ a {
 
   grid-column-gap: 30px;
   grid-row-gap: 64px;
+
   width: 100%;
   background-color: #ffffff;
 }
 
-.ftn {
-  width: 350px;
-  height: 148px;
-}
+
 
 .ftn .details .feture-headline {
   font-family: Inter;
@@ -298,7 +298,6 @@ a {
     "B D"
     "B  D";
   grid-gap: 30px;
-  padding: 200px;
 }
 
 /* Quote Mark */
@@ -330,7 +329,7 @@ a {
 }
 
 .testimonial .sectionheading .heading::before {
-  content: url("/img/Quote Mark.png");
+  content: url("./img/Quote Mark.png");
   position: absolute;
   left: -100px;
   top:-50px;
@@ -445,7 +444,6 @@ a {
 /* ###################### STATS #################### */
 .stats {
   display: flex;
-  justify-content: center;
   align-items: center;
 
   height: 332px;
@@ -453,9 +451,8 @@ a {
   background-color: #ffffff;
 }
 
-.stats .sectionheading {
-  width: 540px;
-  height: 168px;
+.stats .sectionheading{
+  width: 50%;
 }
 
 .stats .sectionheading .heading {
@@ -495,8 +492,7 @@ a {
 .count-grid-container .sts {
   display: flex;
   background-color: #ffffff;
-  width: 255px;
-  height: 66px;
+
 }
 
 .count-grid-container .sts .icon {
@@ -525,6 +521,10 @@ a {
   font-feature-settings: "salt" on, "liga" off;
 
   color: #18191f;
+}
+
+.features .featurelist-container{
+
 }
 
 /* ###################### Feature #################### */
