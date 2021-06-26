@@ -169,23 +169,23 @@ a {
 
 
 /* ###################### FEATURES #################### */
-.features {
-  position: relative;
+.features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   height: 672px;
   width: 100%;
   background-color: #ffffff;
 }
-.features .sectionheading {
-  position: absolute;
-  width: 540px;
-  height: 136px;
-  top: 64px;
-  left: 450px;
 
+.features .sectionheading{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
+
+  margin: 48px 0;
 }
 
 .features .sectionheading .headline {
@@ -201,9 +201,10 @@ a {
   color: #18191f;
 }
 
-.features .sectionheading .description {
+
+.features .sectionheading .description{
+
   width: 540px;
-  height: 64px;
 
   font-family: Inter;
   font-style: normal;
@@ -225,14 +226,8 @@ a {
   grid-column-gap: 30px;
   grid-row-gap: 64px;
 
-  position: absolute;
-  width: 1110px;
-  height: 360px;
 
-  left: 165px;
-  top: 248px;
-
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .ftn {
@@ -594,7 +589,7 @@ a {
   width: 444px;
   height: 160px;
 
-  font-family: Inter;
+  font-family: Inter; 
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
