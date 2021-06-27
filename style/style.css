@@ -353,7 +353,6 @@ a {
   padding: 32px;
 
   width: 350px;
-  height: 468px;
   background: #ffffff;
 
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -371,9 +370,6 @@ a {
   margin-right: 16px;
 }
 
-.testimonial .content .testimonial3 .feedback-signature {
-  height: 256px;
-}
 
 .testimonial .content .feedback {
   font-family: Inter;
@@ -385,7 +381,10 @@ a {
   font-feature-settings: "salt" on, "liga" off;
 
   color: #18191f;
-  margin: 24px 0px;
+}
+
+.testimonial .content .personDetails{
+  margin-top: 24px;
 }
 
 .testimonial .content .personDetails .name {
@@ -418,7 +417,6 @@ a {
 
 .testimonial .testimonial1 {
   width: 445px;
-  height: 340px;
 
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -429,9 +427,6 @@ a {
 
 .testimonial .testimonial2 {
   width: 350px;
-  height: 276px;
-  left: 735px;
-  top: 540px;
 
   background: #ffffff;
 
@@ -523,9 +518,6 @@ a {
   color: #18191f;
 }
 
-.features .featurelist-container{
-
-}
 
 /* ###################### Feature #################### */
 
@@ -612,18 +604,47 @@ a {
 }
 
 /* ###################### Footer #################### */
-.footer {
+.footer-container{
   display: flex;
-  justify-content: center;
   align-items: center;
-
+  justify-content: center;
   height: 280px;
-  width: 100%;
 
   color: #ffffff;
   background-color: #0b0d17;
 }
 
-.footer ul {
+.footer-container .container{
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .leftsection .link{
+  display: flex;
+
+  margin: 24px 0;
+
   color: #ffffff;
+}
+.footer .links div {
+  margin-right: 24px;
+}
+
+.footer .links .link a{
+  color: #ffffff;
+}
+
+.footer .downloadBadges{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.footer .downloadBadges .badge{
+  margin-top: 16px;
 }
