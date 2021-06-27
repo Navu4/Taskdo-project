@@ -329,7 +329,8 @@ a {
 }
 
 .testimonial .sectionheading .heading::before {
-  content: url("./img/Quote Mark.png");
+  content: url("../img/Quote Mark.png");
+  opacity: 0.4;
   position: absolute;
   left: -100px;
   top:-50px;
@@ -446,8 +447,13 @@ a {
   background-color: #ffffff;
 }
 
+.stats .container{
+  display: flex;
+  align-items: center;
+}
+
 .stats .sectionheading{
-  width: 50%;
+  width: 60%;
 }
 
 .stats .sectionheading .heading {
@@ -555,8 +561,7 @@ a {
 
 .feature .content {
   width: 540px;
-  height: 302px;
-
+  
   background-color: #ffffff;
 
   padding: 0px 48px;
