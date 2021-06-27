@@ -453,7 +453,7 @@ a {
 }
 
 .stats .sectionheading{
-  width: 60%;
+  width: 50%;
 }
 
 .stats .sectionheading .heading {
@@ -564,7 +564,7 @@ a {
   
   background-color: #ffffff;
 
-  padding: 0px 48px;
+  padding-left: 48px;
 }
 
 .feature .content .headline {
