@@ -159,7 +159,6 @@ a {
   height: 142px;
   background-color: #fff;
   display: flex;
-
   align-items: center;
 }
 
@@ -167,6 +166,12 @@ a {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+.carousel .carouselbox div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ###################### FEATURES #################### */
@@ -223,8 +228,6 @@ a {
   width: 100%;
   background-color: #ffffff;
 }
-
-
 
 .ftn .details .feture-headline {
   font-family: Inter;
@@ -333,7 +336,7 @@ a {
   opacity: 0.4;
   position: absolute;
   left: -100px;
-  top:-50px;
+  top: -50px;
 }
 
 .testimonial .sectionheading .description {
@@ -371,7 +374,6 @@ a {
   margin-right: 16px;
 }
 
-
 .testimonial .content .feedback {
   font-family: Inter;
   font-style: normal;
@@ -384,7 +386,7 @@ a {
   color: #18191f;
 }
 
-.testimonial .content .personDetails{
+.testimonial .content .personDetails {
   margin-top: 24px;
 }
 
@@ -447,12 +449,12 @@ a {
   background-color: #ffffff;
 }
 
-.stats .container{
+.stats .container {
   display: flex;
   align-items: center;
 }
 
-.stats .sectionheading{
+.stats .sectionheading {
   width: 50%;
 }
 
@@ -493,7 +495,6 @@ a {
 .count-grid-container .sts {
   display: flex;
   background-color: #ffffff;
-
 }
 
 .count-grid-container .sts .icon {
@@ -523,7 +524,6 @@ a {
 
   color: #18191f;
 }
-
 
 /* ###################### Feature #################### */
 
@@ -561,7 +561,7 @@ a {
 
 .feature .content {
   width: 540px;
-  
+
   background-color: #ffffff;
 
   padding-left: 48px;
@@ -609,7 +609,7 @@ a {
 }
 
 /* ###################### Footer #################### */
-.footer-container{
+.footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -619,7 +619,7 @@ a {
   background-color: #0b0d17;
 }
 
-.footer-container .container{
+.footer-container .container {
   width: 100%;
 }
 
@@ -628,7 +628,7 @@ a {
   justify-content: space-between;
 }
 
-.footer .leftsection .link{
+.footer .leftsection .link {
   display: flex;
 
   margin: 24px 0;
@@ -639,17 +639,17 @@ a {
   margin-right: 24px;
 }
 
-.footer .links .link a{
+.footer .links .link a {
   color: #ffffff;
 }
 
-.footer .downloadBadges{
+.footer .downloadBadges {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
 }
 
-.footer .downloadBadges .badge{
+.footer .downloadBadges .badge {
   margin-top: 16px;
 }
