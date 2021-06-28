@@ -7,5 +7,7 @@
       prevArrow: $('.prev-arrow'),
       nextArrow: $('.next-arrow'),
     });
+
+    
   });
 })(jQuery);
