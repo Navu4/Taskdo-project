@@ -168,11 +168,10 @@ a {
   width: 100%;
 }
 
-.carousel .carouselbox div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.carousel .carouselbox img {
+  margin:0 auto;
 }
+
 
 .slick-track .slick-track { display: none; }
 
