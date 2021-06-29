@@ -37,4 +37,19 @@
 
   });
 
+  var flag = true;
+  document.querySelector('.humburger').onclick = function() {
+    
+    this.classList.toggle('active');
+    if(flag){
+      document.querySelector('.mainMenu').classList.remove("hide");
+      flag = false;
+    } else {
+      document.querySelector('.mainMenu').classList.add("hide");
+      flag = true;
+    } 
+  };
+
+
+
 })(jQuery);
