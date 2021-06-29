@@ -208,7 +208,7 @@ a {
   cursor: pointer;
 }
 
-
+/* @media (max-width: ) */
 
 
 /* ###################### FEATURES #################### */
@@ -321,7 +321,7 @@ a {
   justify-content: center;
   align-items: center;
 
-  height: 896px;
+  height: max-content;
   width: 100%;
   background: #d5fafc;
 }
@@ -352,19 +352,20 @@ a {
     "B D"
     "B  D";
   grid-gap: 30px;
+
+  margin: 72px 0;
 }
 
 /* Quote Mark */
 .testimonial .main-quotemark {
-  width: 143px;
-  height: 1px;
+  width: max-content;
 
   opacity: 0.3;
 }
 
 .testimonial .sectionheading {
-  width: 445px;
-  height: 168px;
+  width: 40vw;
+  height: max-content;
 }
 
 .testimonial .sectionheading .heading {
@@ -407,7 +408,8 @@ a {
 .testimonial .testimonial3 {
   padding: 32px;
 
-  width: 350px;
+
+  width: 26vw;
   background: #ffffff;
 
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -470,7 +472,7 @@ a {
 }
 
 .testimonial .testimonial1 {
-  width: 445px;
+  width: 31vw;
 
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
@@ -480,7 +482,7 @@ a {
 }
 
 .testimonial .testimonial2 {
-  width: 350px;
+  width: 26vw;
 
   background: #ffffff;
 
@@ -488,6 +490,44 @@ a {
   border-radius: 8px;
 
   padding: 32px;
+}
+
+
+@media (max-width: 1000px){
+  .testimonial-container .testimonial{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .testimonial-container .testimonial .section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 20px 0;
+    width: auto;
+  }
+
+  .testimonial-container .testimonial .item{
+    width: 60vw;
+  }
+
+  .testimonial-container .testimonial .heading::before{
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 600px){
+  .testimonial-container .testimonial .heading{
+    font-size: 40px;
+  }
+
+  .testimonial-container .testimonial .heading::before{
+    transform: scale(0.5);
+  }
 }
 
 /* ###################### STATS #################### */
@@ -576,10 +616,11 @@ a {
 @media(max-width: 375px){
   .stats-container .stats .count-grid-container{
     grid-column-gap: 0px;
+    transform: scale(0.8);
   }
 
   .stats-container .stats .sectionheading .heading{
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -598,14 +639,21 @@ a {
 
 /* ###################### Feature #################### */
 
+.headline-feature{
+  height: max-content;
+}
+
+
 .feature {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  height: max-content;
+  height: 100%;
   width: 100%;
   background-color: #ffffff;
+
+  padding: 64px 0;
 }
 
 .feature .phonemockup {
@@ -614,7 +662,7 @@ a {
 
   position: relative;
   overflow: hidden;
-  width: 540px;
+  width: 50vw;
   height: 540px;
 
   background: #f1e4ff;
@@ -622,14 +670,12 @@ a {
 }
 
 .feature .phonemockup .phone {
-  width: 313.95px;
-  height: 679.81px;
 
   margin: 56px 0;
 }
 
 .feature .content {
-  width: 540px;
+  width: 50vw;
 
   background-color: #ffffff;
 
@@ -649,8 +695,6 @@ a {
 }
 
 .feature .content .description {
-  width: 444px;
-  height: 160px;
 
   font-family: Inter;
   font-style: normal;
@@ -681,6 +725,52 @@ a {
   cursor: pointer;
   text-decoration: underline;
 }
+
+
+@media (max-width: 1200px){
+  .feature .container{
+    margin: 0;
+  }
+
+  .feature .phonemockup {
+    max-height: 70vh;
+  }
+  .feature .phonemockup .phone {
+    transform: scale(0.8);
+    margin: 20px;
+  }
+}
+@media (max-width: 500px){
+  .feature .phonemockup {
+    max-height: 10vh;
+  }
+  .feature .phonemockup .phone {
+    transform: scale(0.6);
+  }
+  
+}
+@media (max-width: 800px){
+  .headline-feature .feature{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .headline-feature .feature .ftn{
+    margin: 20px;
+    width: 80%;
+  }
+  .headline-feature .feature .phonemockup{
+    width: 80%;
+  }
+  .feature .phonemockup {
+    max-height: 55vh;
+  }
+}
+
+
+
+
 /* ###################### Footer #################### */
 .footer-container {
   display: flex;
@@ -736,6 +826,10 @@ a {
   .footer{
     display: flex;
     flex-direction: column;
+  }
+
+  .footer-container .footer{
+    margin-left:15px;
   }
 
   .footer .downloadBadges{
